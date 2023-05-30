@@ -1,0 +1,27 @@
+//--------------------------------------------------------------------------
+    // 1 - Configure the A/D Module
+
+    // * Configure analog pins, voltage reference and digital I/O 
+    // * Select A/D acquisition time
+    // * Select A/D conversion clock
+    // * Select A/D input channel
+    // * Turn on A/D module
+    
+    // 2 - Configure A/D interrupt (if desired)
+    // * Clear ADIF bit
+    // * Set ADIE bit
+    // * Select interrupt priority ADIP bit
+    // * Set GIE bit
+
+    // 3 - Wait the required acquisition time (if required)  
+
+    // 4 - Start conversion: Set GO/DONE(bar) bit
+
+    // 5 Wait for A/D conversion to complete by either
+    // * Polling for the GO/Done bit to be cleared
+    // * Waiting for the A/D interrupt
+
+    // 6 - Read A/D result registers (ADRESH:ADRESL); clear bit ADIF, if required
+
+    // 7 - Go to Step 1 or Step 2 as required                
+    

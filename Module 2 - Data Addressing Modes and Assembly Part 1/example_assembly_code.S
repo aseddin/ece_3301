@@ -1,0 +1,10 @@
+	PSECT	code
+	MOVLW	0x03
+	MOVWF	0x2B, a
+	LFSR	0, 0x020
+REPEAT:	CLRF	0xFEE, a
+	DECF	0x2B, F, a 
+	BNZ	REPEAT	
+	END
+
+
